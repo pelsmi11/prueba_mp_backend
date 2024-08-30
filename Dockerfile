@@ -7,8 +7,8 @@ RUN npm install
 
 COPY . /app
 
-EXPOSE  $PORT
+EXPOSE  3000
 
-ENV PORT $PORT
+ENV PORT 3000
 
 CMD ["node", "src/index.js"]
