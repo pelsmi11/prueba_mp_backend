@@ -7,4 +7,8 @@ RUN npm install
 
 COPY . /app
 
+EXPOSE  $PORT
+
+ENV PORT $PORT
+
 CMD ["node", "src/index.js"]
